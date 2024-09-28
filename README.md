@@ -37,11 +37,11 @@ QRazy uses some fancy JavaScript QR Libraries. It takes your input, spins it aro
 
 You're in good company! We're always open to new QRazy ideas and improvements. Here's how you can help:
 
-### 1. Fork the Repository 🍴
+- **Fork the Repository**
 
 Click the magical **Fork** button in the top-right corner of this page. This will create your own copy of the QRazy repository. Behold, your own QR empire!
 
-### 2. Clone the Forked Repo 🖥️
+- **Clone the Forked Repo**
 
 Clone your forked repo to your local machine so you can go QRazy with the code:
 
@@ -50,7 +50,7 @@ git clone https://github.com/Misgar-Numan/FeF-QRazy.git
 cd FeF-QRazy
 ```
 
-### 3. Create a New Branch 🌿
+- **Create a New Branch**
 
 We don't want things to get QRazy in the main branch, so create a new one:
 
@@ -58,11 +58,11 @@ We don't want things to get QRazy in the main branch, so create a new one:
 git checkout -b your-feature-branch
 ```
 
-### 4. Make Your Changes ✏️
+- **Make Your Changes**
 
 Time to unleash your inner genius! Add features, fix bugs, or simply add more QR-madness. Don’t forget to test it—no one likes broken squares.
 
-### 5. Commit Your Changes ✅
+- **5. Commit Your Changes**
 
 When you're happy with your work, commit it:
 
@@ -71,13 +71,13 @@ git add .
 git commit -m "Added feature: more QR madness!"
 ```
 
-### 6. Push to Your Branch 🚀
+- **6. Push to Your Branch**
 
 ```bash
 git push origin your-feature-branch
 ```
 
-### 7. Create a Pull Request 📬
+- **Create a Pull Request**
 
 Head over to the original repository, and create a Pull Request (PR) from your forked branch. Don’t forget to describe why your contribution is QRazy awesome!
 
