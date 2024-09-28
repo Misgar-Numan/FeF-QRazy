@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #d3f4e9;
+  color: #2ba187;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  background-color: #a6e9d5;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(28, 83, 73, 0.5);
+  max-width: 90%;
+  width: 400px;
+  text-align: center;
+}
+
+h1 {
+  color: #1e675a;
+  font-size: 1.5rem;
+}
+
+p {
+  color: #2ba187;
+  font-size: 0.8rem;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d3f4e9;
+  border-radius: 10px;
+  outline: none;
+  color: #1b463e;
+}
+
+.size-group {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#qrText {
+  margin: 10px 0;
+}
+
+#qrHeight {
+  margin: 0 3px 0 0;
+}
+
+
+button {
+  background-color: #61d1b3;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #45bca0;
+}
+
+#downloadButton {
+  display: none;
+}
+
+#qrCode {
+  margin: 20px;
+}
+
+.footer {
+  margin-top: 20px;
+  color: #1e675a;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.5rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+
+  .container {
+    width: 80%;
+    padding: 15px;
+    overflow: hidden;
+  }
+}
