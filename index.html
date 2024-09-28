@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QRazy</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="assets/QRazy.png" type="image/png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>QRazy</h1>
+    <p>(The QRazy Code Generator)</p>
+    <input type="text" id="qrText" placeholder="Enter Text or URL" autocomplete="off" required>
+    <div class="size-group">
+      <input type="number" id="qrHeight" placeholder="Height(200px default)">
+      <input type="number" id="qrWidth" placeholder="Width(200px default)">
+    </div>
+    <button id="generateButton">Generate QR Code</button>
+    <div id="qrCode"></div>
+    <button id="downloadButton">Download QR Code</button>
+    <div class="footer">
+      <p>Made with &hearts; by Misgar-Numan</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
