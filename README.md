@@ -16,8 +16,10 @@ Want to experience the QRazy-sqaures? Check out the live QRazyness: [QRazy Live 
 
 - **Generate QR Codes**: Duh , what else did you expect? Bake cookies!
 - **Custom URL or Text Input**: Turn anything from a URL to your grocery list into a sleek QR code.
+- **Pre-set QR Code Sizes**: Pre-defined QR code sizes, making it easier to quickly generate a QR code with common dimesnions.
 - **Always Visible Generate Button**: Because nobody likes searching for buttons.
 - **Download Button**: Save your QR code and flaunt it!
+- **Save QR Codes in Different Formats**: Provides users the option to download the QR code in different formats e.g PNG,JPEG or SVG.
 - **No Ads**: You won't suffer throught pop-up ads.
 - **Small But Faster**: It's faster than your grandma trying to understand TikTok.
 - **Mobile Friendly**: You can generate QR codes while riding a unicycle… or just on your phone.
