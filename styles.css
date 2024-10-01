@@ -13,7 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .container {
@@ -21,8 +21,9 @@ body {
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(28, 83, 73, 0.5);
-  max-width: 90%;
-  width: 400px;
+  max-width: 100%;
+  width: 100%;
+  max-width: 400px;
   text-align: center;
 }
 
@@ -33,7 +34,7 @@ h1 {
 
 p {
   color: #2ba187;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 input[type="text"] {
@@ -48,28 +49,19 @@ input[type="text"] {
 
 .size-format-group {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-}
-
-label {
-  color: #1e675a;
-  font-size: 1rem;
-  margin: 0 3px 0 0;
+  gap: 10px;
 }
 
 #qrSize,
 #qrFormat {
-  width: 100%;
+  width: 48%;
   padding: 10px;
   border: 1px solid #d3f4e9;
   border-radius: 10px;
   outline: none;
   color: #1b463e;
-}
-
-#qrSize {
-  margin: 0 5px 0 0;
 }
 
 button {
@@ -96,20 +88,28 @@ button:hover {
   margin: 20px;
 }
 
+#qrCode canvas {
+  max-width: 100%;
+  height: auto;
+}
+
 .footer {
   margin-top: 20px;
   color: #1e675a;
   font-size: 0.9rem;
 }
 
-/* Responsive Design */
 @media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
   h1 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   p {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
 
   button {
@@ -117,8 +117,27 @@ button:hover {
   }
 
   .container {
-    width: 80%;
+    max-width: 90%;
     padding: 15px;
-    overflow: hidden;
+  }
+
+  input[type="text"] {
+    padding: 8px;
+  }
+
+  #qrSize,
+  #qrFormat {
+    width: 100%;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .size-format-group {
+    flex-direction: column;
+    gap: 5px;
   }
 }

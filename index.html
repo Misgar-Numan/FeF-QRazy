@@ -18,16 +18,16 @@
     <input type="text" id="qrText" placeholder="Enter Text or URL" autocomplete="off" required>
 
     <div class="size-format-group">
-      <label for="qrSize">Size: </label>
       <select id="qrSize">
+        <option value="" disabled selected>Select Size</option>
         <option value="100">Small (100px)</option>
         <option value="200">Medium (200px)</option>
-        <option value="300">Large (300px)</option>
+        <option value="400">Large (400px)</option>
       </select>
 
-      <label for="qrFormat">Format: </label>
       <select id="qrFormat">
-        <option value="png" selected>PNG</option>
+        <option value="" disabled selected>Select Format</option>
+        <option value="png">PNG</option>
         <option value="jpeg">JPEG</option>
         <option value="svg">SVG</option>
       </select>

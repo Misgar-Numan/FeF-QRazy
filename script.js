@@ -1,6 +1,6 @@
 document.getElementById('generateButton').addEventListener('click', function () {
   const qrText = document.getElementById('qrText').value;
-  const qrSize = parseInt(document.getElementById('qrSize').value);
+  const qrSize = parseInt(document.getElementById('qrSize').value) || 200; //Default Size: 200
   const qrCodeContainer = document.getElementById('qrCode');
 
   qrCodeContainer.innerHTML = ''; // Clear previous QR Code
@@ -21,7 +21,7 @@ document.getElementById('generateButton').addEventListener('click', function () 
 
     // Download QR code as an image
     downloadButton.onclick = function () {
-      const format = document.getElementById('qrFormat').value;
+      const format = document.getElementById('qrFormat').value || 'png'; //Default Format: 'png'
       let mimeType;
       if (format === 'png') {
         mimeType = 'image/png';
