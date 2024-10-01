@@ -48,7 +48,7 @@ input[type="text"] {
 }
 
 ::placeholder {
-  color: #1b463e
+  color: #1b463e;
 }
 
 .size-format-group {
