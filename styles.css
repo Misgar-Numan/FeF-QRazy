@@ -36,8 +36,30 @@ p {
   font-size: 0.8rem;
 }
 
-input[type="text"],
-input[type="number"] {
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d3f4e9;
+  border-radius: 10px;
+  outline: none;
+  color: #1b463e;
+  margin: 10px 0;
+}
+
+.size-format-group {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+label {
+  color: #1e675a;
+  font-size: 1rem;
+  margin: 0 3px 0 0;
+}
+
+#qrSize,
+#qrFormat {
   width: 100%;
   padding: 10px;
   border: 1px solid #d3f4e9;
@@ -46,19 +68,9 @@ input[type="number"] {
   color: #1b463e;
 }
 
-.size-group {
-  display: flex;
-  justify-content: space-evenly;
+#qrSize {
+  margin: 0 5px 0 0;
 }
-
-#qrText {
-  margin: 10px 0;
-}
-
-#qrHeight {
-  margin: 0 3px 0 0;
-}
-
 
 button {
   background-color: #61d1b3;
