@@ -31,16 +31,8 @@ document.getElementById('generateButton').addEventListener('click', function () 
       } else if (format === 'jpeg') {
         mimeType = 'image/jpeg';
         dataURL = qr.canvas.toDataURL(mimeType);
-      } else if (format === 'svg') {
-        mimeType = 'image/svg+xml';
-        const svgData = `
-          <svg xmlns="http://www.w3.org/2000/svg" width="${qrSize}" height="${qrSize}">
-            <rect width="100%" height="100%" fill="white"/>
-            <path d="${qr.toSVG()}" fill="black"/>
-          </svg>`;
-        dataURL = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svgData);
       }
-
+      
       const link = document.createElement('a');
       link.href = dataURL;
       link.download = `QRazyCode.${format}`;
