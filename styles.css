@@ -1,3 +1,13 @@
+:root {
+  --primary-color: #2ba187;
+  --secondary-color: #1e675a;
+  --background-color: #d3f4e9;
+  --container-background: #a6e9d5;
+  --button-background: #61d1b3;
+  --button-hover: #45bca0;
+  --text-color: #1b463e;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +16,8 @@
 }
 
 body {
-  background-color: #d3f4e9;
-  color: #2ba187;
+  background-color: var(--background-color);
+  color: var(--primary-color);
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -17,7 +27,7 @@ body {
 }
 
 .container {
-  background-color: #a6e9d5;
+  background-color: var(--container-background);
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(28, 83, 73, 0.5);
@@ -28,28 +38,28 @@ body {
 }
 
 h1 {
-  color: #1e675a;
+  color: var(--secondary-color);
   font-size: 1.5rem;
 }
 
 p {
-  color: #2ba187;
+  color: var(--primary-color);
   font-size: 0.9rem;
 }
 
 input[type="text"] {
   width: 100%;
   padding: 10px;
-  border: 1px solid #d3f4e9;
+  border: 1px solid var(--background-color);
   border-radius: 10px;
   outline: none;
-  background-color: #d3f4e9;
-  color: #1b463e;
+  background-color: var(--background-color);
+  color: var(--text-color);
   margin: 10px 0;
 }
 
 ::placeholder {
-  color: #1b463e;
+  color: var(--text-color);
 }
 
 .size-format-group {
@@ -63,15 +73,15 @@ input[type="text"] {
 #qrFormat {
   width: 48%;
   padding: 10px;
-  border: 1px solid #d3f4e9;
+  border: 1px solid var(--background-color);
   border-radius: 10px;
   outline: none;
-  background-color: #d3f4e9;
-  color: #1b463e;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 button {
-  background-color: #61d1b3;
+  background-color: var(--button-background);
   color: white;
   border: none;
   padding: 10px;
@@ -83,7 +93,7 @@ button {
 }
 
 button:hover {
-  background-color: #45bca0;
+  background-color: var(--button-hover);
 }
 
 .download-share-buttons {
@@ -104,7 +114,7 @@ button:hover {
 
 .footer {
   margin-top: 20px;
-  color: #1e675a;
+  color: var(--secondary-color);
   font-size: 0.9rem;
 }
 
