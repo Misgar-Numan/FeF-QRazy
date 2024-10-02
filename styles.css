@@ -86,12 +86,15 @@ button:hover {
   background-color: #45bca0;
 }
 
-#downloadButton {
+.download-share-buttons {
   display: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
 }
 
 #qrCode {
-  margin: 20px;
+  margin: 20px 20px 5px 20px;
 }
 
 #qrCode canvas {
@@ -140,5 +143,18 @@ button:hover {
 @media (max-width: 300px) {
   .size-format-group {
     flex-direction: column;
+  }
+
+  .download-share-buttons {
+    flex-direction: column;
+  }
+
+  #downloadButton,
+  #shareButton {
+    margin-top: 0;
+  }
+
+  #qrCode {
+    margin: 20px 20px 15px 20px;
   }
 }

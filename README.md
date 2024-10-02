@@ -19,7 +19,8 @@ Want to experience the QRazy-sqaures? Check out the live QRazyness: [QRazy Live 
 - **Pre-set QR Code Sizes**: Pre-defined QR code sizes, making it easier to quickly generate a QR code with common dimesnions.
 - **Always Visible Generate Button**: Because nobody likes searching for buttons.
 - **Download Button**: Save your QR code and flaunt it!
-- **Save QR Codes in Different Formats**: Provides users the option to download the QR code in different formats including PNG and JPEG.
+- **Download QR Codes in Different Formats**: Provides users the option to download the QR code in different formats including PNG and JPEG.
+- **Share QR Code**: Allows users to share the QR Code like it's the last slice of pizza.
 - **No Ads**: You won't suffer throught pop-up ads.
 - **Small But Faster**: It's faster than your grandma trying to understand TikTok.
 - **Mobile Friendly**: You can generate QR codes while riding a unicycle or just on your phone.
