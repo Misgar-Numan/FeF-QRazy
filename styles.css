@@ -18,12 +18,12 @@
 body {
   background-color: var(--background-color);
   color: var(--primary-color);
-  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
+  padding: 20px;
 }
 
 .container {
@@ -31,7 +31,6 @@ body {
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(28, 83, 73, 0.5);
-  max-width: 100%;
   width: 100%;
   max-width: 400px;
   text-align: center;
@@ -64,6 +63,14 @@ input[type="text"] {
 
 .size-format-group {
   display: flex;
+}
+
+.download-share-buttons {
+  display: none;
+}
+
+.size-format-group,
+.download-share-buttons {
   justify-content: space-between;
   align-items: center;
   gap: 10px;
@@ -71,7 +78,7 @@ input[type="text"] {
 
 #qrSize,
 #qrFormat {
-  width: 48%;
+  width: 100%;
   padding: 10px;
   border: 1px solid var(--background-color);
   border-radius: 10px;
@@ -96,18 +103,11 @@ button:hover {
   background-color: var(--button-hover);
 }
 
-.download-share-buttons {
-  display: none;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-}
-
-#qrCode {
+.qr-code-container {
   margin: 20px 20px 5px 20px;
 }
 
-#qrCode canvas {
+.qr-code-container canvas {
   max-width: 100%;
   height: auto;
 }
@@ -140,21 +140,14 @@ button:hover {
     padding: 15px;
   }
 
-  #qrSize,
-  #qrFormat {
-    width: 100%;
-  }
-
   .footer {
     font-size: 0.8rem;
   }
 }
 
 @media (max-width: 300px) {
-  .size-format-group {
-    flex-direction: column;
-  }
 
+  .size-format-group,
   .download-share-buttons {
     flex-direction: column;
   }
@@ -164,7 +157,7 @@ button:hover {
     margin-top: 0;
   }
 
-  #qrCode {
+  .qr-code-container {
     margin: 20px 20px 15px 20px;
   }
 }

@@ -1,5 +1,8 @@
-document.getElementById('generateButton').addEventListener('click', function () {
-  const qrText = document.getElementById('qrText').value;
+document.getElementById('generateButton').addEventListener('click', generateQRCodeHandler);
+
+// Function to handle the generation of QR Code
+function generateQRCodeHandler() {
+  const qrText = document.getElementById('qrText').value.trim();
   const qrSize = parseInt(document.getElementById('qrSize').value) || 200; // Default Size: 200
   const qrFormat = document.getElementById('qrFormat').value || 'png'; // Default Format: 'png'
   const qrCodeContainer = document.getElementById('qrCode');
@@ -14,7 +17,7 @@ document.getElementById('generateButton').addEventListener('click', function () 
   } else {
     alert('Please enter a URL or text to generate a QR code.');
   }
-});
+}
 
 // Function to generate a new QR Code using 'QRious' Library
 function generateQRCode(text, size, container) {
@@ -34,12 +37,12 @@ function generateQRCode(text, size, container) {
 // Function to handle 'Download' option
 function setupDownloadButton(qrFormat) {
   const downloadButton = document.getElementById('downloadButton');
-  downloadButton.onclick = function () {
+  downloadButton.onclick = () => {
     const qrCanvas = document.querySelector('#qrCode canvas');
-    let mimeType = `image/${qrFormat}`;
-    let dataURL = qrCanvas.toDataURL(mimeType);
-
+    const mimeType = `image/${qrFormat}`;
+    const dataURL = qrCanvas.toDataURL(mimeType);
     const link = document.createElement('a');
+
     link.href = dataURL;
     link.download = `QRazyCode.${qrFormat}`;
     link.click();
@@ -49,7 +52,7 @@ function setupDownloadButton(qrFormat) {
 // Function to handle 'Share' option using 'Web Share API'
 function setupShareButton(qrFormat) {
   const shareButton = document.getElementById('shareButton');
-  shareButton.onclick = function () {
+  shareButton.onclick = () => {
     const qrCanvas = document.querySelector('#qrCode canvas');
     qrCanvas.toBlob(function (blob) {
       const file = new File([blob], `QRazyCode.${qrFormat}`, { type: `image/${qrFormat}` });
