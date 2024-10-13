@@ -14,16 +14,17 @@ Want to experience the QRazy-sqaures? Check out the live QRazyness: [QRazy Live 
 
 ## Features 🔥 (aka Why You Need This In Your Life)
 
-- **Generate QR Codes**: Duh , what else did you expect? Bake cookies!
-- **Custom URL or Text Input**: Turn anything from a URL to your grocery list into a sleek QR code.
-- **Pre-set QR Code Sizes**: Pre-defined QR code sizes, making it easier to quickly generate a QR code with common dimesnions.
-- **Always Visible Generate Button**: Because nobody likes searching for buttons.
-- **Download Button**: Save your QR code and flaunt it!
-- **Download QR Codes in Different Formats**: Provides users the option to download the QR code in different formats including PNG and JPEG.
-- **Share QR Code**: Allows users to share the QR Code like it's the last slice of pizza.
-- **No Ads**: You won't suffer throught pop-up ads.
-- **Small But Faster**: It's faster than your grandma trying to understand TikTok.
-- **Mobile Friendly**: You can generate QR codes while riding a unicycle or just on your phone.
+- **Generate QR Codes**: Duh, what else did you expect? Bake cookies? No, just crispy QR codes.
+- **Custom URL or Text Input**: From your Instagram handle to your grandma's secret lasagna recipe—turn anything into a QR code, instantly!
+- **Pre-set QR Code Sizes**: Choose from perfectly pre-measured QR sizes, like picking the right pizza slice: big, bigger, or who-needs-a-plate.
+- **Always Visible Generate Button**: It's right there—no scavenger hunt required. Just click and boom, QR magic!
+- **Download Button**: Save your QR code like it’s a rare Pokémon, ready to be shown off.
+- **Download QR Codes in Different Formats**: PNG? JPEG? We’ve got you covered like a Swiss Army knife, but for QR codes.
+- **Share QR Code**: Send your QR code to friends like you’re sharing the WiFi password at a party—everyone's gonna love it.
+- **No Ads**: Your experience here will be as pure and ad-free as a Sunday morning before the chores kick in.
+- **Small But Faster**: It’s faster than your grandma trying to understand TikTok, and probably smarter too.
+- **Mobile Friendly**: Generate QR codes on the go! Yes, even while riding a unicycle—though we don’t recommend texting and unicycling at the same time.
+- **Dark/Light Mode**: Whether you're a creature of the night or a daytime warrior, we've got you covered with a switchable dark and light mode. Your QR codes will look great in both!
 
 ## Requirements 💻
 

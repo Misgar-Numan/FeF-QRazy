@@ -1,13 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
 
 :root {
-  --primary-color: #2ba187;
-  --secondary-color: #1e675a;
-  --background-color: #d3f4e9;
-  --container-background: #a6e9d5;
-  --button-background: #61d1b3;
-  --button-hover: #45bca0;
-  --text-color: #1b463e;
+  --primary-color: #e84118;
+  --secondary-color: #4a4a4a;
+  --background-color: #f5f5f5;
+  --container-background: #ffffff;
+  --button-background: #e84118;
+  --button-hover: #d73314;
+  --text-color: #333333;
+  --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode {
+  --primary-color: #e84118;
+  --secondary-color: #f2f2f2;
+  --background-color: #181818;
+  --container-background: #2c2c2c;
+  --button-background: #e84118;
+  --button-hover: #d73314;
+  --text-color: #f5f5f5;
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
 
 * {
@@ -30,33 +42,34 @@ body {
 
 .container {
   background-color: var(--container-background);
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(28, 83, 73, 0.5);
+  box-shadow: var(--box-shadow);
   width: 100%;
   max-width: 400px;
+  border-radius: 15px;
+  padding: 20px;
   text-align: center;
+  position: relative;
 }
 
 h1 {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-size: 1.5rem;
 }
 
 p {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 0.9rem;
 }
 
 input[type="text"] {
   width: 100%;
+  margin: 10px 0;
   padding: 10px;
   border: 1px solid var(--background-color);
   border-radius: 10px;
   outline: none;
   background-color: var(--background-color);
   color: var(--text-color);
-  margin: 10px 0;
 }
 
 ::placeholder {
@@ -90,19 +103,43 @@ input[type="text"] {
 }
 
 button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
   background-color: var(--button-background);
   color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 10px;
   cursor: pointer;
-  margin-top: 10px;
-  width: 100%;
   font-size: 1rem;
 }
 
 button:hover {
   background-color: var(--button-hover);
+}
+
+#theme-btn {
+  position: absolute;
+  top: -7px;
+  right: 3px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  padding: 0;
+  font-size: 1.3rem;
+  background: none;
+}
+
+#theme-btn:hover {
+  transform: scale(1.1);
+}
+
+.fa-sun {
+  color: var(--primary-color)
+}
+
+.fa-moon {
+  color: var(--secondary-color);
 }
 
 .qr-code-container {
